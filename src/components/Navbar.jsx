@@ -1,10 +1,11 @@
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
+import CartIcon from "./CartIcon";
 
 function Navbar() {
   const navigate = useNavigate();
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ position: "relative" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         .navbar .logo {
@@ -55,6 +56,9 @@ function Navbar() {
       </ul>
 
       <button className="nav-btn" onClick={() => navigate("/items")}>Shop Now</button>
+      <div style={{ position: "absolute", top: 0, right: 0 }}>
+        <CartIcon />
+      </div>
     </nav>
   );
 }

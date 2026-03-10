@@ -1,3 +1,63 @@
+/* CartIcon styles for Navbar */
+.navbar-carticon {
+  position: absolute;
+  top: 18px;
+  right: 32px;
+  z-index: 200;
+}
+.carticon-btn {
+  background: #fff;
+  border: 2px solid #e29547;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  box-shadow: 0 2px 10px #e2954722;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.carticon-btn:hover {
+  box-shadow: 0 6px 18px #e2954744;
+  transform: scale(1.07);
+}
+.carticon-icon {
+  font-size: 28px;
+  color: #e29547;
+}
+.carticon-badge {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: #e29547;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px #e2954744;
+}
+@media (max-width: 600px) {
+  .navbar-carticon {
+    top: 8px;
+    right: 8px;
+  }
+  .carticon-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .carticon-icon {
+    font-size: 18px;
+  }
+  .carticon-badge {
+    font-size: 11px;
+    padding: 1px 5px;
+    top: 2px;
+    right: 2px;
+  }
+}
 /* Navbar */
 .navbar {
   display: flex;
@@ -37,15 +97,6 @@
 
 .logo-container:hover {
   transform: scale(1.08);
-}
-@media (max-width: 600px) {
-  .navbar {
-    padding: 12px 8px;
-    gap: 8px;
-  }
-  .logo-container {
-    gap: 4px;
-  }
 }
 
 .logo-icon {

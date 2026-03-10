@@ -28,11 +28,8 @@ import Contact from "./components/Contact";
 import Login from "./components/Login";
 
 function AppContent() {
-  const location = useLocation();
-  const hideCartIcon = ["/login", "/contact"].includes(location.pathname);
   return (
     <>
-      {!hideCartIcon && <CartIcon />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/items" element={<Items/>}></Route>

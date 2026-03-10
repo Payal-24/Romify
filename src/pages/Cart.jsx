@@ -1,9 +1,11 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const { cart } = useCart();
+  const navigate = useNavigate();
   const total = cart.items.reduce((sum, item) => {
     const price = parseInt(item.product.price.replace(/[^0-9]/g, ""), 10) || 0;
     return sum + price * item.quantity;

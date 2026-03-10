@@ -52,7 +52,10 @@ export default function Cart() {
               }}>🛒</div>
               <h2 style={{ color: "#b86b2a", fontWeight: 700, fontSize: 26, marginBottom: 8 }}>Your cart is empty!</h2>
               <p style={{ color: "#888", fontSize: 17, marginBottom: 18 }}>Add some beautiful items to make your home shine.</p>
-              <a href="/items" style={{ padding: "14px 36px", background: "linear-gradient(135deg,#e29547 60%,#b86b2a 100%)", color: "#fff", borderRadius: 12, fontWeight: 700, fontSize: 19, textDecoration: "none", boxShadow: "0 2px 12px #e29547aa", transition: "background 0.22s", letterSpacing: 0.5 }}>Shop Now</a>
+              <button
+                style={{ padding: "14px 36px", background: "linear-gradient(135deg,#e29547 60%,#b86b2a 100%)", color: "#fff", borderRadius: 12, fontWeight: 700, fontSize: 19, border: "none", boxShadow: "0 2px 12px #e29547aa", transition: "background 0.22s", letterSpacing: 0.5, cursor: "pointer" }}
+                onClick={() => navigate('/items')}
+              >Shop Now</button>
             </div>
           ) : (
             <>

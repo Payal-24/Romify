@@ -26,6 +26,7 @@ import DecorativeVases from "./pages/DecorativeVases";
 import FlowerVase from "./pages/FlowerVase";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 function AppContent() {
   return (
@@ -58,6 +59,7 @@ function AppContent() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>
   );

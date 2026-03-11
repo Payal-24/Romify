@@ -1,5 +1,6 @@
 import "./Login.css";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login({ onLoginSuccess, onSignUpClick }) {
   const [formData, setFormData] = useState({
@@ -325,12 +326,9 @@ function Login({ onLoginSuccess, onSignUpClick }) {
           <div className="login-footer">
             <p>
               Don't have an account?{" "}
-              <a href="#" className="signup-link" onClick={(e) => {
-                e.preventDefault();
-                onSignUpClick && onSignUpClick();
-              }}>
+              <Link to="/signup" className="signup-link">
                 Sign Up
-              </a>
+              </Link>
             </p>
           </div>
 

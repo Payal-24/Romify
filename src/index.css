@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* Responsive styles for cart item card and Buy Now button */
 @media (max-width: 600px) {
   .cart-item-card {
@@ -31,8 +32,6 @@
     box-sizing: border-box !important;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
 * {
   margin: 0;
   padding: 0;
